@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Trending Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="nav-brand">
+        <i class="fa-brands fa-github"></i>
+        <span>Trending Explorer</span>
+      </div>
+      <div class="nav-actions">
+        <button class="bookmarks-btn" id="bookmarksToggle" title="Toggle bookmarks" aria-label="Toggle bookmarks">
+          <i class="fa-solid fa-bookmark"></i>
+          <span>Bookmarks</span>
+          <span class="bookmark-count" id="bookmarkCount">0</span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+      <h1>Discover What Developers Are Building</h1>
+      <p>
+        Explore trending GitHub repositories — search, filter, and bookmark in
+        one place.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search repositories..."
+          autocomplete="off"
+        />
+        <button class="clear-btn" id="clearSearch" title="Clear search" aria-label="Clear search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </header>
