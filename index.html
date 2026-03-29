@@ -52,3 +52,92 @@
         </button>
       </div>
     </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="container">
+      <!-- Controls Bar -->
+      <div class="controls-bar">
+        <div class="results-info" id="resultsInfo">Loading repositories...</div>
+        <div class="controls-right">
+          <!-- Language Filter -->
+          <select class="select-control" id="languageFilter" title="Filter by language" aria-label="Filter by language">
+            <option value="">All Languages</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="TypeScript">TypeScript</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+            <option value="C">C</option>
+            <option value="Rust">Rust</option>
+            <option value="Go">Go</option>
+            <option value="PHP">PHP</option>
+            <option value="Swift">Swift</option>
+            <option value="Kotlin">Kotlin</option>
+            <option value="Ruby">Ruby</option>
+          </select>
+
+          <!-- Sort -->
+          <select class="select-control" id="sortFilter" title="Sort repositories" aria-label="Sort repositories">
+            <option value="stars">Most Stars</option>
+            <option value="forks">Most Forks</option>
+            <option value="updated">Recently Updated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Bookmarks Panel -->
+      <div class="bookmarks-panel" id="bookmarksPanel">
+        <div class="bookmarks-header">
+          <h3><i class="fa-solid fa-bookmark"></i> Your Bookmarks</h3>
+          <button class="clear-bookmarks-btn" id="clearBookmarks" title="Clear all bookmarks" aria-label="Clear all bookmarks">
+            Clear All
+          </button>
+        </div>
+        <div class="bookmarks-grid" id="bookmarksGrid">
+          <p class="empty-bookmarks">
+            No bookmarks yet. Click the bookmark icon on any repo!
+          </p>
+        </div>
+      </div>
+
+      <!-- Repo Grid -->
+      <div class="repo-grid" id="repoGrid">
+        <!-- Skeleton Cards shown while loading -->
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results hidden" id="noResults">
+        <i class="fa-solid fa-circle-xmark"></i>
+        <h3>No repositories found</h3>
+        <p>Try a different search term or filter.</p>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination">
+        <button class="page-btn" id="prevBtn" disabled title="Previous page" aria-label="Previous page">
+          <i class="fa-solid fa-chevron-left"></i> Previous
+        </button>
+        <span class="page-info" id="pageInfo">Page 1</span>
+        <button class="page-btn" id="nextBtn" title="Next page" aria-label="Next page">
+          Next <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>
+        Built with <i class="fa-solid fa-heart"></i> using GitHub REST API
+        &nbsp;·&nbsp; Data updates in real-time
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
