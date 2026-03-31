@@ -61,7 +61,7 @@ async function fetchRepos() {
   showSkeletons();
 
   try {
-    const query = `stars:>500${state.selectedLanguage ? `+language:${state.selectedLanguage}` : ""}`;
+    const query = `stars:>500${state.selectedLanguage ? ` language:${state.selectedLanguage}` : ""}`;
     const sort  = state.selectedSort === "updated" ? "updated" : "stars";
     const url   = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=${sort}&order=desc&per_page=100`;
 
