@@ -4,7 +4,7 @@
 
 A fast, clean web app to explore trending GitHub repositories. Filter by language, sort by popularity, and bookmark repos you want to revisit.
 
-🔗 **Live Demo** — Coming soon
+🔗 **Live Demo** — https://github-trending-explorer.vercel.app
 
 ---
 
@@ -16,14 +16,16 @@ So I built one.
 
 ---
 
-## Planned Features
+## Features
 
 - Search repos by name or description
 - Filter by programming language
 - Sort by stars, forks, or recently updated
-- Bookmark favourite repos
+- Bookmark favourite repos with persistent storage
 - Dark / Light mode toggle
-- Fully responsive design
+- Skeleton loading while data fetches
+- Pagination for browsing results
+- Fully responsive — mobile, tablet, desktop
 
 ---
 
@@ -33,3 +35,14 @@ So I built one.
 - GitHub REST API
 - Vercel (deployment)
 
+---
+
+## Getting Started
+
+```bash
+git clone https://github.com/1-navneet/github-trending-explorer.git
+cd github-trending-explorer
+open index.html
+```
+
+No install needed — just open in browser.
